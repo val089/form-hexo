@@ -4,7 +4,7 @@
   "rules": {
     "prettier/prettier": ["warn", {
       "singleQuote": true,
-      "printWidth": 150,
+      "printWidth": 100,
       "endOfLine": "auto"
     }],
     "no-console": 1
