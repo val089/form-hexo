@@ -6,4 +6,5 @@ export const Wrapper = styled.section`
   display: grid;
   place-items: center;
   background: url(${({ theme }) => theme.images.heroBg}) center no-repeat;
+  background-size: cover;
 `;
