@@ -33,3 +33,12 @@ export const validate = (values) => {
 
 export const checkNameLength = (value) =>
   value && value.length < 4 ? 'Must be 4 characters or more' : undefined;
+
+export const convertValues = (values) => {
+  const converted = {};
+  for (const key in values) {
+    const parsed = parseFloat(values[key]);
+    converted[key] = isNaN(values[key]) ? values[key] : parsed;
+  }
+  return converted;
+};

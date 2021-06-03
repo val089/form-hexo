@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const InputField = ({ input, label, type, step, min, max, meta: { touched, error, warning } }) => {
+const InputField = ({ input, label, type, step, min, max, meta: { touched, error } }) => {
   return (
     <div>
       <label>
