@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/form-hexo/static/js/main.d57aa8e7.chunk.js",
+    "main.js.map": "/form-hexo/static/js/main.d57aa8e7.chunk.js.map",
+    "runtime-main.js": "/form-hexo/static/js/runtime-main.22410028.js",
+    "runtime-main.js.map": "/form-hexo/static/js/runtime-main.22410028.js.map",
+    "static/js/2.3db72599.chunk.js": "/form-hexo/static/js/2.3db72599.chunk.js",
+    "static/js/2.3db72599.chunk.js.map": "/form-hexo/static/js/2.3db72599.chunk.js.map",
+    "index.html": "/form-hexo/index.html",
+    "static/js/2.3db72599.chunk.js.LICENSE.txt": "/form-hexo/static/js/2.3db72599.chunk.js.LICENSE.txt",
+    "static/media/bg.6957d644.jpg": "/form-hexo/static/media/bg.6957d644.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22410028.js",
+    "static/js/2.3db72599.chunk.js",
+    "static/js/main.d57aa8e7.chunk.js"
+  ]
+}
