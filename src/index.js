@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 import { reducer as formReducer } from 'redux-form';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import ContactForm from 'views/ContactForm';
+import Root from 'views/Root';
 
 const reducers = {
   form: formReducer,
@@ -19,7 +19,7 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(...middl
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <ContactForm />
+      <Root />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
