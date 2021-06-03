@@ -35,21 +35,17 @@ let Form = ({ handleSubmit, valid, dishTypeValue, successInfo, errorInfo }) => {
         </>
       )}
       {dishTypeValue === 'soup' && (
-        <>
-          <Field
-            name="spiciness_scale"
-            component={InputField}
-            type="number"
-            min="1"
-            max="10"
-            label="Spiciness scale from 1 to 10"
-          />
-        </>
+        <Field
+          name="spiciness_scale"
+          component={InputField}
+          type="number"
+          min="1"
+          max="10"
+          label="Spiciness scale from 1 to 10"
+        />
       )}
       {dishTypeValue === 'sandwich' && (
-        <>
-          <Field name="slices_of_bread" component={InputField} type="number" label="Slices of bread" />
-        </>
+        <Field name="slices_of_bread" component={InputField} type="number" label="Slices of bread" />
       )}
       <Button type="submit" disabled={!valid} label="Submit" />
     </StyledForm>
@@ -69,21 +65,9 @@ Form = reduxForm({
 
 const selector = formValueSelector('formHexo');
 Form = connect((state) => {
-  // const nameValue = selector(state, 'name');
-  // const preparationTimeValue = selector(state, 'preparation_time');
   const dishTypeValue = selector(state, 'type');
-  // const noOfSlicesValue = selector(state, 'no_of_slices');
-  // const diameterValue = selector(state, 'diameter');
-  // const spicinessScale = selector(state, 'spiciness_scale');
-  // const slicesOfBread = selector(state, 'slices_of_bread');
   return {
-    // nameValue,
-    // preparationTimeValue,
     dishTypeValue,
-    // noOfSlicesValue,
-    // diameterValue,
-    // spicinessScale,
-    // slicesOfBread,
   };
 })(Form);
 
