@@ -31,8 +31,7 @@ export const validate = (values) => {
   return errors;
 };
 
-export const checkNameLength = (value) =>
-  value && value.length < 4 ? 'Must be 4 characters or more' : undefined;
+export const checkNameLength = (value) => (value && value.length < 4 ? 'Must be 4 characters or more' : undefined);
 
 export const convertValues = (values) => {
   const converted = {};
