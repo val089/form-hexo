@@ -14,7 +14,14 @@ let Form = ({ handleSubmit, valid, dishTypeValue, successInfo, errorInfo }) => {
       {successInfo && <StyledSuccessSubmit>Success</StyledSuccessSubmit>}
       {errorInfo && <StyledErrorSubmit>Error</StyledErrorSubmit>}
       <Field name="name" component={InputField} type="text" label="Dish name" validate={[required, checkNameLength]} />
-      <Field name="preparation_time" component={InputField} type="time" label="Preparation time" step="1" validate={required} />
+      <Field
+        name="preparation_time"
+        component={InputField}
+        type="time"
+        label="Preparation time"
+        step="1"
+        validate={required}
+      />
       <Field name="type" component={SelectField} label="Dish type" validate={required}>
         <option value="" />
         <option value="pizza">pizza</option>
@@ -29,7 +36,14 @@ let Form = ({ handleSubmit, valid, dishTypeValue, successInfo, errorInfo }) => {
       )}
       {dishTypeValue === 'soup' && (
         <>
-          <Field name="spiciness_scale" component={InputField} type="number" min="1" max="10" label="Spiciness scale from 1 to 10" />
+          <Field
+            name="spiciness_scale"
+            component={InputField}
+            type="number"
+            min="1"
+            max="10"
+            label="Spiciness scale from 1 to 10"
+          />
         </>
       )}
       {dishTypeValue === 'sandwich' && (
